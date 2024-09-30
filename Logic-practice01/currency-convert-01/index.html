@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Currency-convert</title>
+</head>
+<body>
+    <header>
+        <h1>Jonhy Alberto</h1>
+        <p>Desenvolvedor Front-end</p>
+    </header>
+    <main>
+        <h2>Conversor de moedas</h2>
+        <label>
+            Converter <b>De</b>
+            <select>
+                <option>R$ Real Brasileiro</option>
+            </select>
+        </label>
+        <label>
+            Converter <b>Para</b>
+            <select class="currency-select">
+                <option value="dolar">US$ Dólar Americano</option>
+                <option value="euro">€ Euro</option>
+                <option value="libra">£ Libra</option>
+            </select>
+        </label>
+        <label>
+            Valor
+            <input type="number" name="" class="input-currency" placeholder="10.000,00"> <!--Input-->
+        </label>
+        <button class="convert-currency">Converter</button> <!--Button-->
+        <section>
+            <div class="currency-box">
+                <img src="./assets/img/brasil 2.png" alt="logo da moeda a converter">
+                <p class="currency">Real</p>
+                <p class="currency-value-convert">R$ 0,00</p> <!--CVC-->
+            </div>
+            <img src="./assets/img/arrow.png" alt="foto de uma seta para baixo" class="arrow-img">
+            <div class="currency-box">
+                <img src="./assets/img/currency-eua-logo.png" alt="logo moeda dos Estados unidos" class="currency-img">
+                <p class="currency" id="currency-name">Dólar Americano</p> <!--Name-->
+                <p class="currency-value-converted">US$ 0.00</p> <!--cvconverted-->
+            </div>
+        </section>
+    </main>
+    <footer>Criado e desenvolvido por Jonhy Alberto</footer>
+</body>
+<script type="module" src="script02.js"></script>
+</html>
