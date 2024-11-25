@@ -2,6 +2,7 @@ import {games} from './products.js'
 
 const btnShowAll = document.querySelector('.show-all');
 const list = document.querySelector('ul');
+const btnMapAll = document.querySelector('.map-all');
 
 function currencyFormat(value){
     const newValue = value.toLocaleString('pt-BR',{style:'currency',currency:'BRL'})
@@ -22,4 +23,9 @@ function showAll(arrayProduct){
     list.innerHTML = myli
 }
 
+function mapAll(){
+
+}
+
 btnShowAll.addEventListener('click',() => showAll(games))
+btnMapAll.addEventListener('click',mapAll)
