@@ -6,12 +6,15 @@ const GAME_OPTIONS = {
 }
 
 const playHuman = (humanChoice) => {
-    console.log(humanChoice)
-    console.log(playMachine())
+    console.log(humanChoice,playMachine())
 }
 
 const playMachine = () => {
     const options = [GAME_OPTIONS.ROCK,GAME_OPTIONS.PAPER,GAME_OPTIONS.SCISSORS]
     const random = Math.floor(Math.random() * 3)
     return options[random]
+}
+
+const playGame = (human,machine) => {
+    console.log(human,machine)
 }
