@@ -11,7 +11,7 @@ const GAME_OPTIONS = {
 }
 
 const playHuman = (humanChoice) => {
-    console.log(humanChoice,playMachine())
+    playGame(humanChoice,playMachine())
 }
 
 const playMachine = () => {
@@ -24,5 +24,13 @@ const playGame = (human,machine) => {
     console.log(human,machine)
     if(human === machine){
         result.innerHTML = 'Deu empate!'
+    }else if(human === GAME_OPTIONS.ROCK && machine === GAME_OPTIONS.SCISSORS || 
+        (human === GAME_OPTIONS.PAPER && machine === GAME_OPTIONS.ROCK ||
+            (human === GAME_OPTIONS.SCISSORS && machine === GAME_OPTIONS.PAPER)
+        )
+    ){
+        result.innerHTML = "Você ganhou!"
+    }else{
+        result.innerHTML = "você perdeu para a Alexa"
     }
 }
