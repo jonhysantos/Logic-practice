@@ -29,8 +29,12 @@ const playGame = (human,machine) => {
             (human === GAME_OPTIONS.SCISSORS && machine === GAME_OPTIONS.PAPER)
         )
     ){
+        humanP ++
+        humanScore.innerHTML = humanP
         result.innerHTML = "Você ganhou!"
     }else{
         result.innerHTML = "você perdeu para a Alexa"
+        machineP ++
+        machineScore.innerHTML = machineP
     }
 }
