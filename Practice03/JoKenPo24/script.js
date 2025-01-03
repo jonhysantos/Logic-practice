@@ -1,5 +1,6 @@
 
-
+const humanScore = document.querySelector('#human-score');
+const machineScore = document.querySelector('#machine-score');
 const result = document.querySelector('.result')
 const GAME_OPTIONS = {
     ROCK:'rock',
